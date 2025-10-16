@@ -38,3 +38,12 @@ codeparrot/codeparrot-small
 ```
 In the latter case, the tester will just output the parent guess, wherease in the former case, in addition it will provide statistics (percentage, recall, ...) about the correct guesses against the provided parents. 
 
+# Evaluating Bench-A, Bench-B
+To run the two benchmarks you can use the provided files of parent and candidate models, i.e. for bench-A use
+```
+python tester.py --prompt_id -1 --file_parents data/benchmark_A_parents.txt --file_candidates benchmark_A_candidates.txt
+python tester.py --prompt_id -1 --file_parents data/benchmark_B_parents.txt --file_candidates benchmark_B_candidates.txt
+```
+
+# Advanced options
+The tester supports some options (e.g. adjusting number of prompts, device used for inference, ...), check `--help` for extensive list.
