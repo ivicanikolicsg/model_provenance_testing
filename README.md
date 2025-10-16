@@ -53,8 +53,8 @@ python tester.py --prompt_id 3 --file_parents parents.txt --file_candidates new_
 # Evaluating Bench-A, Bench-B
 To run the two benchmarks you can use the provided files of parent and candidate models, i.e. 
 ```
-python tester.py --file_parents data/benchmark_A_parents.txt --file_candidates benchmark_A_candidates.txt
-python tester.py --file_parents data/benchmark_B_parents.txt --file_candidates benchmark_B_candidates.txt
+python tester.py --file_parents data/bench_A_parents.txt --file_candidates data/bench_A_candidates.txt
+python tester.py --file_parents data/bench_B_parents.txt --file_candidates data/bench_B_candidates.txt
 ```
 
 # Advanced options
