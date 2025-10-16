@@ -49,7 +49,7 @@ BEE-spoke-data/zephyr-220m-sft-full
 codeparrot/codeparrot-small
 ...
 ```
-In the latter case, the tester will just output the parent guess, wherease in the former case, in addition it will provide statistics (percentage, recall, ...) about the correct guesses against the provided parents. 
+In the latter case, the tester will just output the parent guess, whereas in the former case, in addition it will provide statistics (percentage, recall, ...) about the correct guesses against the provided parents. 
 
 
 The tester first caches the outputs of all parent LLMs accross different set of prompts (because they are reused accross all tested models) and then stores them. All future testers can use these cached outputs, by specifying the prompt_id, i.e. use `--prompt_id <prompt_cache_id>`, where `<prompt_cache_id>` increase sequentially `0,1,...`, check the folder `cached_prompts` for available ids. That is, given a fresh set of parents the first run would be
