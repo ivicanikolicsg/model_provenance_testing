@@ -11,4 +11,4 @@ To run the tester you need at least to specify two files: one for the parent mod
 ```
 python tester.py --prompt_id -1 --file_parents <parent_file> --file_candidates <tested_models_file>
 ```
-The tester first caches the outputs of prompts of all parents (because they are reused accross all tested models) and stores them 
+The tester first caches the outputs of all parent LLMs accross different set of prompts (because they are reused accross all tested models) and then stores them. All future testers can use these cached outputs, by specifying the prompt_id, i.e. instead of `--prompt_id -1` which means recompute outputs, you can use `--prompt_id <prompt_cache_id>`, where `<prompt_cache_id>` increase sequentially `0,1,...`, check the folder `cached_prompts` for available ids.
