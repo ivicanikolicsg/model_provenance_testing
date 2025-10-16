@@ -17,7 +17,11 @@ python tester.py --file_parents data/bench_B_parents.txt --file_candidates data/
 ```
 
 # Quick test
-You can run quick test **only** against parenst from Bench-A + Bench-B, without specifying anything but a list of candidates, e.g.  
+You can run quick test **only** against parenst from Bench-A + Bench-B, without specifying anything but a comma separated list of candidates, e.g.  
+```
+python tester.py --quick_test AUTOMATIC/promptgen-majinai-unsafe,ggml-org/stories15M_MOE
+
+```
 
 # Basic options
 To run the tester you need at least to specify two files: one for the parent models and one for the tested models. 
