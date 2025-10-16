@@ -22,3 +22,18 @@ EleutherAI/pythia-70m
 microsoft/DialoGPT-medium
 ...
 ```
+The file `<tested_models_file>` contains lines of tested models, which can be specified with ground truth parent model (format <tested_model>,<parent_model>), or without, 
+i.e. either for instance (if the tested model does not have parent then provide None as parent, otherwise actual parent)
+```
+BEE-spoke-data/zephyr-220m-sft-full,BEE-spoke-data/smol_llama-220M-openhermes
+codeparrot/codeparrot-small,None
+...
+```
+of without parent
+```
+BEE-spoke-data/zephyr-220m-sft-full
+codeparrot/codeparrot-small
+...
+```
+In the latter case, the tester will just output the parent guess, wherease in the former case, in addition it will provide statistics (percentage, recall, ...) about the correct guesses against the provided parents. 
+
