@@ -47,4 +47,4 @@ python tester.py --prompt_id -1 --file_parents data/benchmark_B_parents.txt --fi
 ```
 
 # Advanced options
-The tester supports some options (e.g. adjusting number of prompts, device used for inference, ...), check `--help` for extensive list.
+The tester supports more advanced options (e.g. adjusting number of prompts, device used for inference, ...), check `--help` for extensive list.
