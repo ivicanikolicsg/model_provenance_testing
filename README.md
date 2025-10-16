@@ -1,2 +1,3 @@
-# model_provenance_testing
-Model provenance testing of LLMs
+# Model provenance testing of LLMs
+This is the code for the paper "Model provenance testing for Large Language Models".
+
