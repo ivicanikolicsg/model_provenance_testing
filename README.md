@@ -24,7 +24,7 @@ python tester.py --quick_test AUTOMATIC/promptgen-majinai-unsafe,ggml-org/storie
 ```
 
 # Basic options
-To run the tester you need at least to specify two files: one for the parent models and one for the tested models. 
+To properly run the tester you need at least to specify two files: one for the parent models and one for the tested models. 
 ```
 python tester.py --file_parents <parent_file> --file_candidates <tested_models_file>
 ```
