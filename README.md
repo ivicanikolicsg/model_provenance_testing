@@ -24,7 +24,7 @@ microsoft/DialoGPT-medium
 ```
 The file `<tested_models_file>` contains lines of tested models, which can be specified with ground truth parent model (format <tested_model>,<parent_model>), or without, 
 
-i.e. either for instance (if the tested model does not have parent then provide None as parent, otherwise actual parent)
+i.e. either with parent (provide None, if tested model does not have parent)
 ```
 BEE-spoke-data/zephyr-220m-sft-full,BEE-spoke-data/smol_llama-220M-openhermes
 codeparrot/codeparrot-small,None
