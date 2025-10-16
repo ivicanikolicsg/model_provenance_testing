@@ -7,7 +7,6 @@ The project consists of:
 * Python implementation of the tester
 
 The tester will download all required LLMs from HuggingFace.  You can test LLMs from the two benchmarks, or your own (see below). 
-
 To produce the full evaluation of the two benchmarks, it requires around 1TB of space and around 2 days (mostly spent downloading LLMs from HuggingFace).
 
 # Instructions
