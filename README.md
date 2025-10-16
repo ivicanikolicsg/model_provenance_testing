@@ -16,7 +16,7 @@ python tester.py --file_parents data/bench_A_parents.txt --file_candidates data/
 python tester.py --file_parents data/bench_B_parents.txt --file_candidates data/bench_B_candidates.txt
 ```
 
-# Instructions
+# Basic options
 To run the tester you need at least to specify two files: one for the parent models and one for the tested models. 
 ```
 python tester.py --file_parents <parent_file> --file_candidates <tested_models_file>
