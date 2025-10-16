@@ -4,3 +4,5 @@ The project consists of:
 * The two benchmarks (Bench-A,Bench-B) of LLMs evaluated in the paper (see folder 'data')
 * Python implementation of the tester
 
+# Instructions
+
