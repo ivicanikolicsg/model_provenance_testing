@@ -38,7 +38,15 @@ codeparrot/codeparrot-small
 In the latter case, the tester will just output the parent guess, wherease in the former case, in addition it will provide statistics (percentage, recall, ...) about the correct guesses against the provided parents. 
 
 
-The tester first caches the outputs of all parent LLMs accross different set of prompts (because they are reused accross all tested models) and then stores them. All future testers can use these cached outputs, by specifying the prompt_id, i.e. use `--prompt_id <prompt_cache_id>`, where `<prompt_cache_id>` increase sequentially `0,1,...`, check the folder `cached_prompts` for available ids.
+The tester first caches the outputs of all parent LLMs accross different set of prompts (because they are reused accross all tested models) and then stores them. All future testers can use these cached outputs, by specifying the prompt_id, i.e. use `--prompt_id <prompt_cache_id>`, where `<prompt_cache_id>` increase sequentially `0,1,...`, check the folder `cached_prompts` for available ids. That is, given a fresh set of parents the first run would be
+```
+python tester.py --file_parents parents.txt --file_candidates children.txt
+```
+and all subsequent tests with this same set of parents can reuse the cached outputs (find the latest id in the folder `cached_prompts`, e.g. `3_...`, so use
+```
+python tester.py --prompt_id 3 --file_parents parents.txt --file_candidates new_children.txt
+```
+
 
 
 
