@@ -12,9 +12,9 @@ To produce the full evaluation of the two benchmarks, it requires around 1TB of 
 # Instructions
 To run the tester you need at least to specify two files: one for the parent models and one for the tested models. 
 ```
-python tester.py --prompt_id -1 --file_parents <parent_file> --file_candidates <tested_models_file>
+python tester.py --file_parents <parent_file> --file_candidates <tested_models_file>
 ```
-The tester first caches the outputs of all parent LLMs accross different set of prompts (because they are reused accross all tested models) and then stores them. All future testers can use these cached outputs, by specifying the prompt_id, i.e. instead of `--prompt_id -1` which means recompute outputs, you can use `--prompt_id <prompt_cache_id>`, where `<prompt_cache_id>` increase sequentially `0,1,...`, check the folder `cached_prompts` for available ids.
+The tester first caches the outputs of all parent LLMs accross different set of prompts (because they are reused accross all tested models) and then stores them. All future testers can use these cached outputs, by specifying the prompt_id, i.e. use `--prompt_id <prompt_cache_id>`, where `<prompt_cache_id>` increase sequentially `0,1,...`, check the folder `cached_prompts` for available ids.
 
 The file `<parent_file>` contains one HuggingFace model per line, e.g.
 ```
@@ -42,8 +42,8 @@ In the latter case, the tester will just output the parent guess, wherease in th
 # Evaluating Bench-A, Bench-B
 To run the two benchmarks you can use the provided files of parent and candidate models, i.e. 
 ```
-python tester.py --prompt_id -1 --file_parents data/benchmark_A_parents.txt --file_candidates benchmark_A_candidates.txt
-python tester.py --prompt_id -1 --file_parents data/benchmark_B_parents.txt --file_candidates benchmark_B_candidates.txt
+python tester.py --file_parents data/benchmark_A_parents.txt --file_candidates benchmark_A_candidates.txt
+python tester.py --file_parents data/benchmark_B_parents.txt --file_candidates benchmark_B_candidates.txt
 ```
 
 # Advanced options
