@@ -6,7 +6,7 @@ The project consists of:
 * The two benchmarks (Bench-A,Bench-B) of LLMs evaluated in the paper (see folder 'data')
 * Python implementation of the tester
 
-The tester will download all required LLMs from HuggingFace.  To produce the full evaluation of both benchmarks, it requires around 1TB and around 2 days (mostly spent downloading LLMs from HuggingFace).
+The tester will download all required LLMs from HuggingFace.  To produce the full evaluation of both benchmarks, it requires around 1TB of space and around 2 days (mostly spent downloading LLMs from HuggingFace).
 
 # Instructions
 To run the tester you need at least to specify two files: one for the parent models and one for the tested models. 
