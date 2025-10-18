@@ -17,7 +17,6 @@ Run
 pip install -r requirements.txt
 ```
 to install all required Python modules.
-```
 
 
 # Evaluating Bench-A, Bench-B
