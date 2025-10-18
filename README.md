@@ -5,7 +5,7 @@ This is the code for the paper "Model provenance testing for Large Language Mode
 The project consists of:
 * Python implementation of the tester
 * The two benchmarks (Bench-A,Bench-B) of LLMs evaluated in the paper (see folder `data`)
-* The random sentence prompts used to by the tester (see 'data/random_sentences.txt')
+* The random sentence prompts used by the tester (see 'data/random_sentences.txt')
 
 The tester will download all required LLMs from HuggingFace.  You can test LLMs from the two benchmarks, or your own (see below). 
 To produce the full evaluation of the two benchmarks, it requires around 1TB of space and around 2 days (mostly spent downloading LLMs from HuggingFace).
