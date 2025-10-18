@@ -18,7 +18,7 @@ python tester.py --file_parents data/bench_B_parents.txt --file_candidates data/
 ```
 
 # Quick test
-You can run quick test (it checks only against parenst from Bench-A and Bench-B), without specifying anything but a comma separated list of candidates, e.g.  
+You can run quick test (it checks only against parenst from Bench-A and Bench-B), without specifying anything but a comma separated list of candidates for testing, e.g.  
 ```
 python tester.py --quick_test AUTOMATIC/promptgen-majinai-unsafe,ggml-org/stories15M_MOE,pranavpsv/genre-story-generator-v2
 
