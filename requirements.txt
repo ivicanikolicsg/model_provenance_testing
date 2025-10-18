@@ -2,4 +2,4 @@ numpy
 scipy
 torch
 transformers
-huggingface-hub==0.10.1
+huggingface-hub==0.26.1
