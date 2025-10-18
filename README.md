@@ -23,7 +23,7 @@ You can run quick test (it checks only against parenst from Bench-A and Bench-B)
 python tester.py --quick_test AUTOMATIC/promptgen-majinai-unsafe,ggml-org/stories15M_MOE,pranavpsv/genre-story-generator-v2
 
 ```
-This will **only** download the tested models, and will used the provided cached outputs for the parent models, so it should be relatively fast.  
+This will **only** download the tested models, and will use the provided cached outputs for the parent models, so it should be relatively fast.  
 
 # Basic options
 To properly run the tester you need at least to specify two files: one for the parent models and one for the tested models. 
